@@ -52,5 +52,14 @@
       "unitTestRunner": "jest"
     }
   },
-  "defaultProject": "test-reprod"
+  "defaultProject": "test-reprod",
+  "plugins": [
+    {
+      "plugin": "@nx/eslint/plugin",
+      "options": {
+        "targetName": "lint"
+      },
+      "include": ["./**/*"]
+    }
+  ]
 }
